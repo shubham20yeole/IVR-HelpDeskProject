@@ -1,0 +1,48 @@
+<!Doctype html>
+<html ng-app="myApp">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+ <script src="javascripts/angular-chart.js"></script>
+ 
+ <script src="javascripts/angular.js"></script>
+
+
+ 
+ <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+</head>
+<body class="container-fluid ">
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <div class="panel-title text-center">Survey result</div>
+    </div>
+    <div class="panel-body container-fluid">
+        <section>
+            <div class="row well">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <section ng-controller="DoughnutCtrl" class="">
+                        <div class="row lead">
+                            <div class="col-md-12 text-center ">'How effective was the teaching in your major at this university?'</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <canvas id="bar" style="height:350px" class="chart chart-doughnut"
+                                        chart-data="data" chart-labels="labels"
+                                        chart-colors="Color" chart-options="options" 
+                                        chart-click="clickme" chart-hover="hoverme"
+                                        chart-dataset-override="DataSetOverride"></canvas>
+
+</canvas> 
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+
+</html>
