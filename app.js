@@ -14,7 +14,7 @@ var app = express();
 
 
 // view engine setup
-var db = mongojs('mongodb://pratik:pratik@ds133438.mlab.com:33438/heroku_9rvcpdq9', ['users','response','news']);
+var db = mongojs('mongodb://****:*****@*****.mlab.com:*****/*****', ['users','response','news']);
 
 app.set('views', path.join(__dirname, 'public'));
 app.set('view engine', 'ejs');
@@ -167,7 +167,7 @@ twiml
 .say('You\'ll be connected shortly connected.',
  { voice: 'alice', language: 'en-GB' })
 .dial({ record:"true"}, function() {
-  this.number('201-920-3362', {
+  this.number('201-887-5323', {
 
   });
   this.number('551-263-6012', {
